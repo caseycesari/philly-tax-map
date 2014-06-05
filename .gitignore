@@ -20,3 +20,9 @@ data/zip
 data/shp
 data/sql
 data/csv
+scripts/create_and_import_parcels.sql
+scripts/create_opa_2014_table.sql
+scripts/create_opa_2015_table.sql
+scripts/import_opa_2014_data.sql
+scripts/import_opa_2015_data.sql
+philly-tax-map
