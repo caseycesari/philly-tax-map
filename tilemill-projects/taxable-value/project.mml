@@ -1,0 +1,75 @@
+{
+  "bounds": [
+    -75.2872,
+    39.8686,
+    -74.9522,
+    40.1416
+  ],
+  "center": [
+    -75.1238,
+    40.0018,
+    11
+  ],
+  "format": "png",
+  "interactivity": {
+    "layer": "parcelsmap",
+    "template_teaser": "{{{Account_Number}}}<br>\n{{{Address}}}<br>\nMarket Value: {{{Market_Value_15}}}<br>\nExempt Land: {{{Exempt_Land_15}}}<br>\nExempt Building: {{{Exempt_Building_15}}}<br>\nTaxable Value 2014: {{{tax_value_2014}}}<br>\nTaxable Value 2015: {{{tax_value_2015}}}<br>\nTax 2014: {{{tax_2014}}}<br>\nTax 2015: {{{tax_2015}}}<br>\nHomestead: {{{Homestead_Exemption_15}}}",
+    "fields": [
+      "Account_Number",
+      "Address",
+      "Market_Value_15",
+      "Exempt_Land_15",
+      "Exempt_Building_15",
+      "tax_value_2014",
+      "tax_value_2015",
+      "tax_2014",
+      "tax_2015",
+      "Homestead_Exemption_15",
+      "parcelid"
+    ]
+  },
+  "minzoom": 11,
+  "maxzoom": 18,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss"
+  ],
+  "Layer": [
+    {
+      "geometry": "polygon",
+      "extent": [
+        -75.2802868218718,
+        39.8723702865228,
+        -74.9568070097369,
+        40.1378510192995
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "parcels_map",
+        "key_field": "parcelid",
+        "geometry_field": "geom_4326",
+        "extent_cache": "auto",
+        "extent": "-75.2802868218718,39.8723702865228,-74.9568070097369,40.1378510192995",
+        "host": "localhost",
+        "dbname": "taxmap",
+        "id": "parcelsmap",
+        "project": "philly-tax-map",
+        "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
+      },
+      "id": "parcelsmap",
+      "class": "",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "parcelsmap"
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "_basemap": "caseypt.map-kbiq8yif",
+  "name": "taxable-value",
+  "description": "",
+  "attribution": "",
+  "version": "0.0.1",
+  "legend": ""
+}
