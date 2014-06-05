@@ -63,7 +63,7 @@ SET tax_value_2014 = 0
 WHERE tax_value_2014 < 0;
 
 UPDATE parcels_map
-SET exempt_value_2014 = "Exempt_Land" + "Exempt_Building"
+SET exempt_value_2014 = "Exempt_Land" + "Exempt_Building";
 
 UPDATE parcels_map
 SET tax_value_2015 = "Taxable_Land_15" + "Taxable_Building_15"
@@ -78,7 +78,7 @@ SET tax_value_2015 = 0
 WHERE tax_value_2015 < 0;
 
 UPDATE parcels_map
-SET exempt_value_2015 = "Exempt_Land_15" + "Exempt_Building_15"
+SET exempt_value_2015 = "Exempt_Land_15" + "Exempt_Building_15";
 
 -- Add column for tax value
 ALTER TABLE parcels_map ADD COLUMN tax_2014 bigint;
